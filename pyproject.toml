@@ -25,6 +25,8 @@ directory_type = "project"
 
 [tool.dg.project]
 root_module = "dagster_project"
+# Stable across local dir name vs GitHub Actions checkout dir (dagster-project)
+code_location_name = "dagster"
 registry_modules = [
     "dagster_project.components.*",
 ]
